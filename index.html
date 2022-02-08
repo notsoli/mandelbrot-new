@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <script src="app.js"></script>
+  <title>Sam's Mandelbrot Set</title>
+</head>
+<body>
+  <div id="interface">
+    <div id="topUI">
+        <div id="reset"><button id="resetView">Reset View</button></div>
+        <div id="iterations">
+            <p id="iterationsLabel">Iterations:</p><input type="number" min="1" max="999" value="50" id="iterationsInput" />
+        </div>
+        <div id="color">
+            <div id="red">
+                <p id="redLabel">25</p><input type="range" min="0" max="255" value="25" id="redSlider" /><button id="redRandomize">Randomize</button>
+            </div>
+            <div id="green">
+                <p id="greenLabel">119</p><input type="range" min="0" max="255" value="119" id="greenSlider" /><button id="greenRandomize">Randomize</button>
+            </div>
+            <div id="blue">
+                <p id="blueLabel">68</p><input type="range" min="0" max="255" value="68" id="blueSlider" /><button id="blueRandomize">Randomize</button>
+            </div>
+        </div>
+    </div>
+    <div id="bottomUI">
+        <div id="positionInfo">
+            <p id="position">Position:</p>
+        </div>
+        <div id="scaleInfo">
+            <p id="scale">Scale:</p>
+        </div>
+        <div id="credits">
+            <p>Written By Sam Randa</p>
+        </div>
+    </div><canvas id="can" width="800" height="600"></canvas>
+</div>
+</body>
+</html>
